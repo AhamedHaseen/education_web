@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduLearn - Your Gateway to Knowledge</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation Header -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <a href="#home">
+              <i class="fas fa-graduation-cap"></i>
+              <span>EduLearn</span>
+            </a>
+          </div>
+
+          <!-- Navigation Menu -->
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active">
+                <i class="fas fa-home"></i>
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#courses" class="nav-link">
+                <i class="fas fa-book"></i>
+                Courses
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">
+                <i class="fas fa-info-circle"></i>
+                About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#instructors" class="nav-link">
+                <i class="fas fa-chalkboard-teacher"></i>
+                Instructors
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">
+                <i class="fas fa-envelope"></i>
+                Contact
+              </a>
+            </li>
+          </ul>
+
+          <!-- Search Bar -->
+          <div class="search-container">
+            <form class="search-form">
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Search courses, topics..."
+              />
+              <button type="submit" class="search-btn">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+
+          <!-- Mobile Menu Toggle -->
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Unlock Your Potential with
+            <span class="highlight">Quality Education</span>
+          </h1>
+          <p class="hero-description">
+            Discover thousands of courses from expert instructors and advance
+            your career with industry-relevant skills.
+          </p>
+          <div class="hero-buttons">
+            <a href="#courses" class="btn btn-primary">
+              <i class="fas fa-play"></i>
+              Start Learning
+            </a>
+            <a href="#about" class="btn btn-secondary">
+              <i class="fas fa-info-circle"></i>
+              Learn More
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="hero-illustration">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title">Why Choose EduLearn?</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3>Certified Courses</h3>
+            <p>
+              Get industry-recognized certificates upon completion of courses.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Expert Instructors</h3>
+            <p>
+              Learn from industry experts with years of real-world experience.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3>Flexible Learning</h3>
+            <p>
+              Study at your own pace with lifetime access to course materials.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Mobile Friendly</h3>
+            <p>Access your courses anywhere, anytime on any device.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+      <div class="container">
+        <h2 class="section-title">Popular Courses</h2>
+        <div class="courses-filter">
+          <button class="filter-btn active" data-filter="all">
+            All Courses
+          </button>
+          <button class="filter-btn" data-filter="programming">
+            Programming
+          </button>
+          <button class="filter-btn" data-filter="design">Design</button>
+          <button class="filter-btn" data-filter="business">Business</button>
+          <button class="filter-btn" data-filter="marketing">Marketing</button>
+        </div>
+        <div class="courses-grid">
+          <div class="course-card" data-category="programming">
+            <div class="course-image">
+              <i class="fab fa-javascript-square"></i>
+            </div>
+            <div class="course-content">
+              <div class="course-badge">Beginner</div>
+              <h3>JavaScript Fundamentals</h3>
+              <p>Master the basics of JavaScript programming language.</p>
+              <div class="course-meta">
+                <span class="course-duration">
+                  <i class="fas fa-clock"></i>
+                  8 weeks
+                </span>
+                <span class="course-students">
+                  <i class="fas fa-users"></i>
+                  1.2k students
+                </span>
+              </div>
+              <div class="course-footer">
+                <span class="course-price">$99</span>
+                <button class="btn btn-small">Enroll Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-card" data-category="design">
+            <div class="course-image">
+              <i class="fab fa-figma"></i>
+            </div>
+            <div class="course-content">
+              <div class="course-badge">Intermediate</div>
+              <h3>UI/UX Design</h3>
+              <p>Create stunning user interfaces and experiences.</p>
+              <div class="course-meta">
+                <span class="course-duration">
+                  <i class="fas fa-clock"></i>
+                  10 weeks
+                </span>
+                <span class="course-students">
+                  <i class="fas fa-users"></i>
+                  850 students
+                </span>
+              </div>
+              <div class="course-footer">
+                <span class="course-price">$149</span>
+                <button class="btn btn-small">Enroll Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-card" data-category="programming">
+            <div class="course-image">
+              <i class="fab fa-react"></i>
+            </div>
+            <div class="course-content">
+              <div class="course-badge">Advanced</div>
+              <h3>React Development</h3>
+              <p>Build modern web applications with React.</p>
+              <div class="course-meta">
+                <span class="course-duration">
+                  <i class="fas fa-clock"></i>
+                  12 weeks
+                </span>
+                <span class="course-students">
+                  <i class="fas fa-users"></i>
+                  2.1k students
+                </span>
+              </div>
+              <div class="course-footer">
+                <span class="course-price">$199</span>
+                <button class="btn btn-small">Enroll Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-card" data-category="business">
+            <div class="course-image">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="course-content">
+              <div class="course-badge">Beginner</div>
+              <h3>Digital Marketing</h3>
+              <p>Learn modern digital marketing strategies.</p>
+              <div class="course-meta">
+                <span class="course-duration">
+                  <i class="fas fa-clock"></i>
+                  6 weeks
+                </span>
+                <span class="course-students">
+                  <i class="fas fa-users"></i>
+                  950 students
+                </span>
+              </div>
+              <div class="course-footer">
+                <span class="course-price">$79</span>
+                <button class="btn btn-small">Enroll Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-card" data-category="programming">
+            <div class="course-image">
+              <i class="fab fa-python"></i>
+            </div>
+            <div class="course-content">
+              <div class="course-badge">Intermediate</div>
+              <h3>Python for Data Science</h3>
+              <p>Analyze data and build machine learning models.</p>
+              <div class="course-meta">
+                <span class="course-duration">
+                  <i class="fas fa-clock"></i>
+                  14 weeks
+                </span>
+                <span class="course-students">
+                  <i class="fas fa-users"></i>
+                  1.8k students
+                </span>
+              </div>
+              <div class="course-footer">
+                <span class="course-price">$179</span>
+                <button class="btn btn-small">Enroll Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-card" data-category="marketing">
+            <div class="course-image">
+              <i class="fas fa-bullhorn"></i>
+            </div>
+            <div class="course-content">
+              <div class="course-badge">Beginner</div>
+              <h3>Social Media Marketing</h3>
+              <p>Master social media marketing across platforms.</p>
+              <div class="course-meta">
+                <span class="course-duration">
+                  <i class="fas fa-clock"></i>
+                  5 weeks
+                </span>
+                <span class="course-students">
+                  <i class="fas fa-users"></i>
+                  1.5k students
+                </span>
+              </div>
+              <div class="course-footer">
+                <span class="course-price">$69</span>
+                <button class="btn btn-small">Enroll Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2 class="section-title">About EduLearn</h2>
+            <p>
+              EduLearn is a leading online education platform dedicated to
+              providing high-quality, accessible learning experiences for
+              students worldwide. Our mission is to democratize education and
+              empower learners to achieve their goals.
+            </p>
+            <div class="stats-grid">
+              <div class="stat-item">
+                <h3>50K+</h3>
+                <p>Students</p>
+              </div>
+              <div class="stat-item">
+                <h3>500+</h3>
+                <p>Courses</p>
+              </div>
+              <div class="stat-item">
+                <h3>100+</h3>
+                <p>Instructors</p>
+              </div>
+              <div class="stat-item">
+                <h3>95%</h3>
+                <p>Success Rate</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <div class="about-illustration">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instructors Section -->
+    <section id="instructors" class="instructors">
+      <div class="container">
+        <h2 class="section-title">Meet Our Expert Instructors</h2>
+        <div class="instructors-grid">
+          <div class="instructor-card">
+            <div class="instructor-avatar">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <h3>John Smith</h3>
+            <p class="instructor-title">Full Stack Developer</p>
+            <p class="instructor-bio">
+              10+ years of experience in web development and software
+              engineering.
+            </p>
+            <div class="instructor-social">
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+
+          <div class="instructor-card">
+            <div class="instructor-avatar">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+            <h3>Sarah Johnson</h3>
+            <p class="instructor-title">UX/UI Designer</p>
+            <p class="instructor-bio">
+              Award-winning designer with expertise in user experience and
+              interface design.
+            </p>
+            <div class="instructor-social">
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-dribbble"></i></a>
+              <a href="#"><i class="fab fa-behance"></i></a>
+            </div>
+          </div>
+
+          <div class="instructor-card">
+            <div class="instructor-avatar">
+              <i class="fas fa-user-cog"></i>
+            </div>
+            <h3>Mike Chen</h3>
+            <p class="instructor-title">Data Scientist</p>
+            <p class="instructor-bio">
+              PhD in Machine Learning with extensive experience in data
+              analysis.
+            </p>
+            <div class="instructor-social">
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-kaggle"></i></a>
+            </div>
+          </div>
+
+          <div class="instructor-card">
+            <div class="instructor-avatar">
+              <i class="fas fa-user-shield"></i>
+            </div>
+            <h3>Emily Davis</h3>
+            <p class="instructor-title">Marketing Expert</p>
+            <p class="instructor-bio">
+              15+ years in digital marketing with proven track record of
+              success.
+            </p>
+            <div class="instructor-social">
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Address</h4>
+                <p>123 Education Street, Learning City, LC 12345</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <p>+1 (555) 123-4567</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>info@edulearn.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h4>Office Hours</h4>
+                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <h3>Send us a Message</h3>
+            <form>
+              <div class="form-group">
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Subject" required />
+              </div>
+              <div class="form-group">
+                <textarea
+                  placeholder="Your Message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>
+              <i class="fas fa-graduation-cap"></i>
+              EduLearn
+            </h3>
+            <p>
+              Empowering learners worldwide with quality education and
+              industry-relevant skills.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#courses">Courses</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#instructors">Instructors</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Categories</h4>
+            <ul>
+              <li><a href="#">Programming</a></li>
+              <li><a href="#">Design</a></li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Data Science</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Student Support</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 EduLearn. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript for functionality -->
+    <script>
+      // Mobile menu toggle
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+
+      // Close mobile menu when clicking on a link
+      document.querySelectorAll(".nav-link").forEach((n) =>
+        n.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+        })
+      );
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Active navigation link highlighting
+      window.addEventListener("scroll", () => {
+        let current = "";
+        const sections = document.querySelectorAll("section");
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (scrollY >= sectionTop - 200) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        document.querySelectorAll(".nav-link").forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${current}`) {
+            link.classList.add("active");
+          }
+        });
+      });
+
+      // Course filtering
+      const filterBtns = document.querySelectorAll(".filter-btn");
+      const courseCards = document.querySelectorAll(".course-card");
+
+      filterBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          // Remove active class from all buttons
+          filterBtns.forEach((b) => b.classList.remove("active"));
+          // Add active class to clicked button
+          btn.classList.add("active");
+
+          const filter = btn.getAttribute("data-filter");
+
+          courseCards.forEach((card) => {
+            if (
+              filter === "all" ||
+              card.getAttribute("data-category") === filter
+            ) {
+              card.style.display = "block";
+            } else {
+              card.style.display = "none";
+            }
+          });
+        });
+      });
+
+      // Search functionality
+      const searchForm = document.querySelector(".search-form");
+      const searchInput = document.querySelector(".search-input");
+
+      searchForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const searchTerm = searchInput.value.toLowerCase();
+
+        courseCards.forEach((card) => {
+          const courseName = card.querySelector("h3").textContent.toLowerCase();
+          const courseDescription = card
+            .querySelector("p")
+            .textContent.toLowerCase();
+
+          if (
+            courseName.includes(searchTerm) ||
+            courseDescription.includes(searchTerm)
+          ) {
+            card.style.display = "block";
+          } else {
+            card.style.display = "none";
+          }
+        });
+
+        // Reset filter buttons
+        filterBtns.forEach((btn) => btn.classList.remove("active"));
+        document.querySelector('[data-filter="all"]').classList.add("active");
+      });
+
+      // Contact form submission
+      const contactForm = document.querySelector(".contact-form form");
+      contactForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        alert("Thank you for your message! We will get back to you soon.");
+        contactForm.reset();
+      });
+
+      // Header background on scroll
+      window.addEventListener("scroll", () => {
+        const header = document.querySelector(".header");
+        if (window.scrollY > 100) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>
